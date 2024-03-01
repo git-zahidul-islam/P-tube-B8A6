@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header class="container px-20 mx-auto">
+    <header class="container lg:px-16 md:px-5 px-4 mx-auto">
         <div class="navbar bg-base-100">
             <div class="navbar-start">
                 <div class="dropdown">
@@ -41,24 +41,40 @@
             <hr class="border-[1px]">
         </div>
     </header>
-    <main class="container px-20 mx-auto m-1">
+    <main class="container lg:px-16 md:px-5 px-4 mx-auto m-1">
         <!-- here showing category -->
         <div id="btn-container" class="flex justify-center mb-4 gap-3">
         </div>
+        <!-- error box here -->
+        <div id="error-content" class="hidden flex flex-col justify-center items-center mt-40 space-y-4">
+            <img class="w-32 h-32" src="Icon.png" alt="icon">
+            <h3 class="text-3xl font-bold text-[#171717] text-center">Oops!! Sorry, There is no <br> content here</h3>
+        </div>
         <!-- product showing start here -->
-        <section>
-            <div class="card w-96 bg-base-100 shadow-xl">
-                <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" />
+        <div id="card-container" class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-5">
+            <!-- card -->
+            <!-- <div class="card bg-base-100 rounded">
+                <figure><img class="h-44 w-80"
+                        src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" />
                 </figure>
-                <div class="card-body">
-                    <h2 class="card-title">Shoes!</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
-                    <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+                <p
+                    class="absolute top-[136px] text-[12px] font-normal bg-[#171717] text-[#FFFFFF] p-1 rounded-md left-48">
+                    12.40 second
+                </p>
+                <div class="mt-4">
+                    <div class="flex gap-2 pe-3">
+                        <img class="w-10 h-10 rounded-full" src="photo.png" alt="photo">
+                        <p class="text-sm font-bold">Building a Winning UX Strategy Using the Kano Model</p>
                     </div>
+                    <div class="flex gap-2 mt-4 ps-12">
+                        <p class="text-sm font-normal text-[#171717B3]">Awlad Hossain</p>
+                        <img src="Group 3.svg" alt="png">
+                    </div>
+                    <p class="mt-4 text-[#171717B3] text-sm font-medium ps-12">91k views</p>
                 </div>
-            </div>
-        </section>
+            </div> -->
+
+        </div>
     </main>
 
     <!-- script -->
