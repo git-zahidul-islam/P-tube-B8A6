@@ -10,10 +10,16 @@ const loadItems = async () => {
 const displayItem = (allData) => {
     allData.forEach(data => {
         console.log(data)
-        const button = document.createElement('button')
-        button.innerText = data.category
+        const button = document.createElement('button');
+        button.classList = `btn btn-ghost bg-slate-600 text-white`
+        button.innerText = data.category;
+        button.addEventListener('click', () => fetchDataGet(data.category_id))
         btnContainer.appendChild(button)
     })
 };
+
+const fetchDataGet = (elementId) => {
+    
+}
 
 loadItems()
